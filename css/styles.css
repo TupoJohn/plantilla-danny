@@ -125,7 +125,7 @@ header {
     /*reglas*/
     /* column-3 pasará de tener 33.33% a 100% */
     .column-3 {
-        width: 100%;
+        width: 50%;
     }
     /* column-4 pasará de tener 25% a 50% */
     .column-4 {
