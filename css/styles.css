@@ -1,78 +1,137 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+html {
     font-size: 16px;
 }
 
+
 /* Redimensión de fuente utilizando rem */
-p{
+
+p {
     font-size: 1rem;
 }
 
-h1{
+h1 {
     font-size: 3rem;
-}
-
-h3{
-    font-size: 2rem;
-}
-
-/* clases predefinidas */
-* {
-    box-sizing: border-box;
-}
-body{
     margin: 0;
 }
 
+h3 {
+    font-size: 2rem;
+}
+
+
+/* clases predefinidas */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
 /* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+
+
 /* Diseño de columnas */
-.column-1{
+
+.column-1 {
     width: 100%;
     float: left;
 }
 
-.column-2{
+.column-2 {
     width: 50%;
     float: left;
 }
 
-.column-3{
-    width: 33.33%;
-    float: left;
-}
-
-.column-4{
+.column-3 {
     width: 25%;
     float: left;
 }
 
-.column-5{
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-5 {
     width: 20%;
     float: left;
 }
 
-.column-6{
+.column-6 {
     width: 16.66%;
     float: left;
 }
 
+header {
+    height: 100vh;
+    background-image: url(../img/ordenador\ cafe.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card-1 {
+    background-image: url(../img/ordenador\ gorro.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+#card-2 {
+    background-image: url(../img/jersey.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+#card-3 {
+    background-image: url(../img/ordenador\ movil.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+#card-4 {
+    background-image: url(../img/ordenador\ cafe.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.padding-s {
+    padding: 1%;
+}
+
+
 /* Otras clases */
 
 @media only screen and (max-width: 600px) {
-/*reglas*/
+    /*reglas*/
     /* column-3 pasará de tener 33.33% a 100% */
-    .column-3{
+    .column-3 {
         width: 100%;
     }
     /* column-4 pasará de tener 25% a 50% */
-    .column-4{
+    .column-4 {
         width: 50%;
     }
-    #caja-10{
+    #caja-10 {
         width: 100%;
     }
 }
